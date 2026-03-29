@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="login-container">
+        <form class="signup-form" name="signup" method="post" data-netlify="true" onSubmit="submit">
+            <h2>Create Account</h2>
+            <p>Join us today! It only takes a minute.</p>
+            
+            <div class="input-group">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname" placeholder="John Doe" required>
+            </div>
+
+            <div class="input-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="name@example.com" required>
+            </div>
+            
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <div class="input-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+            </div>
+
+            <div class="checkbox-group">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I agree to the <a href="#">Terms & Conditions</a></label>
+            </div>
+            
+            <button type="submit" class="login-btn">Sign Up</button>
+            
+            <div class="form-footer">
+                <span>Already have an account? <a href="index.html" target="_blank">Log In</a></span>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
